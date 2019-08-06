@@ -13,8 +13,11 @@ public class PermutationIteration {
 	public static void main(String[] args) 
 	{
 		
-		
-		
+//<<<<<<< HEAD
+//		
+//		
+//=======
+//>>>>>>> Functional
 
 	}
 
