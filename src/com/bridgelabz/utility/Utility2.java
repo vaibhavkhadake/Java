@@ -75,6 +75,11 @@ public class Utility2
 				
 		
 	}
+	/**
+	 * 
+	 * @param string1
+	 * @return
+	 */
 	public static boolean palindrome(String string1)
 	{
 		int temp=string1.length();
@@ -95,6 +100,72 @@ public class Utility2
 		}
 		
 		return false;
+		
+		
+	}
+	/**
+	 * 
+	 * @param day
+	 * @param month
+	 * @param year
+	 */
+	public static void dayOfWeek(int day, int month, int year) 
+	{
+		/*input taken from command line DD/MM/YYYY format
+		*month = 0 for january ,1 for feb...... 
+		*day= 0 sunday,1 for monday .......
+		**/
+		int y = year - (14 - month) / 12;
+        int x = y + y/4 - y/100 + y/400;
+        int m = month + 12 * ((14 - month) / 12) - 2;
+        int date = (day + x + (31*m)/12) % 7;
+        
+       if(date==0)
+       {
+    	   System.out.println("Day is Sunday");
+    	   
+       }
+       else if(date==1)
+       {
+    	   System.out.println("Day is Monday");
+    	   
+       }
+       else if(date==2)
+       {
+    	   System.out.println("Day is Tuesday");
+    	   
+       }
+       else if(date==3)
+       {
+    	   System.out.println("Day is Wednesday");
+    	   
+       }
+       else if(date==4)
+       {
+    	   System.out.println("Day is Thirsday");
+    	   
+       }
+       else if(date==5)
+       {
+    	   System.out.println("Day is Friday");
+    	   
+       }
+       else if(date==6)
+       {
+    	   System.out.println("Day is Saturday");
+    	   
+       }
+		
+		
+	}
+	/**
+	 * 
+	 * @param month
+	 * @param year
+	 */
+	public static void calender(int[] month, int[] year)
+	{
+		
 		
 		
 	}

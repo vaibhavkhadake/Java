@@ -12,8 +12,10 @@ public class PermutationIteration {
 
 	public static void main(String[] args) 
 	{
+		String string="VAIBHAV";
+		int n=string.length();
 		
-
+		
 	}
 
 }

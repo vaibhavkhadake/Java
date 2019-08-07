@@ -242,15 +242,48 @@ public class Utility {
 	 */
 	public void dayWeek(int day, int month, int year) {
 		
-		 int y = year - (14 - month) / 12;
+			int y = year - (14 - month) / 12;
 	        int x = y + y/4 - y/100 + y/400;
 	        int m = month + 12 * ((14 - month) / 12) - 2;
 	        int date = (day + x + (31*m)/12) % 7;
+	       if(date==0)
+	       {
+	    	   System.out.println("Day is Sunday");
+	    	   
+	       }
+	       else if(date==1)
+	       {
+	    	   System.out.println("Day is Monday");
+	    	   
+	       }
+	       else if(date==2)
+	       {
+	    	   System.out.println("Day is Tuesday");
+	    	   
+	       }
+	       else if(date==3)
+	       {
+	    	   System.out.println("Day is Wednesday");
+	    	   
+	       }
+	       else if(date==4)
+	       {
+	    	   System.out.println("Day is Thirsday");
+	    	   
+	       }
+	       else if(date==5)
+	       {
+	    	   System.out.println("Day is Friday");
+	    	   
+	       }
+	       else if(date==6)
+	       {
+	    	   System.out.println("Day is Saturday");
+	    	   
+	       }
+	       
 	        
-	        System.out.println(y);
-	        System.out.println(x);
-	        System.out.println(m);
-	        System.out.println("Date is"+date);
+	        
 	}
 /**
  * Convert Celsius to Fahrenheit and Fahrenheit to Celsius.
