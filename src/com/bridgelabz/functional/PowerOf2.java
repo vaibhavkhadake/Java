@@ -12,8 +12,8 @@ import com.bridgelabz.utility.Utility;
  ******************************************************************************/
 public class PowerOf2 {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		int number=Integer.parseInt(args[0]);
 		///System.out.println(number);
 		Utility.power(number);

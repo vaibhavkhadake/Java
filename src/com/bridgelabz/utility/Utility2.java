@@ -169,5 +169,86 @@ public class Utility2
 		
 		
 	}
-
+	/**
+	 * 
+	 * @param number
+	 * @return
+	 */
+	public static long factorial(int number)
+	{
+		int fact=1;
+		if(number>0)
+		{
+			for(int i=1;i<=number;i++)
+			{
+				fact=fact*i;
+			}
+			System.out.println(fact);
+		}
+		return 0;
+	}
+	/**
+	 * 
+	 * @param number
+	 * @return
+	 */
+	public static int prime(int number)
+	{
+		 boolean flag=true;
+		 if(number>1)
+		 {
+		 for(int i=2;i<=number/2;i++)
+		 {
+			 if(number%i==0)
+			 {
+				 flag=false;
+				 break;
+			 }
+			 else
+			 {
+				 flag=true;
+			 }
+		 }
+			 
+		 }
+		 if(flag==true)
+		 {
+			 System.out.println("Prime"); 
+		 }
+		else
+		{
+			System.out.println("Not a Prime number");
+		}
+		return 0;
+		
+		
+	}
+	/**
+	 * 
+	 * @param amount
+	 * @param rate_of_interest
+	 * @param period
+	 */
+	public static double compound_interest(double amount, double rate_of_interest, double period) 
+	{
+		double total=amount*Math.pow((1+rate_of_interest/100),period);
+		System.out.println("total amount "+total);
+		return total;
+		
+	}
+	/**
+	 * 
+	 * @param amount = Compound interest value.
+	 * @param rate_of_interest
+	 * @param period
+	 */
+	public static void current_value(double amount, double rate_of_interest, double period)
+	{
+		double initialValue=amount/Math.pow((1+rate_of_interest/100),period);
+		System.out.println("total amount "+initialValue);
+		
+		
+	}
+	
+	
 }

@@ -63,8 +63,7 @@ public class Utility {
 		{
 			if(year%400==0)
 			{
-				System.out.println("Leap year");	
-				
+				System.out.println("Leap year");		
 			}
 			else if(year%100==0)
 			{
@@ -77,8 +76,7 @@ public class Utility {
 			else
 			{
 				System.out.println("Not a Leap year");
-			}
-			
+			}	
 		}
 		else
 		{
@@ -134,7 +132,6 @@ public class Utility {
 				System.out.println("True");
 			}
 			else if((month==6 && day>=1 && day<=20) )
-				
 			{
 				System.out.println("True");
 			}
@@ -211,9 +208,8 @@ public class Utility {
 	 * @param value4
 	 * @param value5
 	 */
-	public void random(double value1, double value2, double value3, double value4, double value5) {
-		// TODO Auto-generated method stub
-		
+	public void random(double value1, double value2, double value3, double value4, double value5)
+	{
 		double minimum=(Math.min(value1,Math.min(value2,Math.min(value3,Math.min(value4, value5)) )));
 		double maximum=(Math.max(value1,Math.max(value2,Math.max(value3,Math.max(value4, value5)) )));
 		double average=value1+value2+value3+value4+value5/5;
@@ -240,7 +236,8 @@ public class Utility {
 	 * @param month
 	 * @param year
 	 */
-	public void dayWeek(int day, int month, int year) {
+	public void dayWeek(int day, int month, int year) 
+	{
 		
 			int y = year - (14 - month) / 12;
 	        int x = y + y/4 - y/100 + y/400;
@@ -248,50 +245,40 @@ public class Utility {
 	        int date = (day + x + (31*m)/12) % 7;
 	       if(date==0)
 	       {
-	    	   System.out.println("Day is Sunday");
-	    	   
+	    	   System.out.println("Day is Sunday");  
 	       }
 	       else if(date==1)
 	       {
-	    	   System.out.println("Day is Monday");
-	    	   
+	    	   System.out.println("Day is Monday");   
 	       }
 	       else if(date==2)
 	       {
 	    	   System.out.println("Day is Tuesday");
-	    	   
 	       }
 	       else if(date==3)
 	       {
-	    	   System.out.println("Day is Wednesday");
-	    	   
+	    	   System.out.println("Day is Wednesday");   
 	       }
 	       else if(date==4)
 	       {
-	    	   System.out.println("Day is Thirsday");
-	    	   
+	    	   System.out.println("Day is Thirsday");   
 	       }
 	       else if(date==5)
 	       {
-	    	   System.out.println("Day is Friday");
-	    	   
+	    	   System.out.println("Day is Friday"); 
 	       }
 	       else if(date==6)
 	       {
-	    	   System.out.println("Day is Saturday");
-	    	   
-	       }
-	       
-	        
-	        
+	    	   System.out.println("Day is Saturday"); 
+	       }      
 	}
 /**
  * Convert Celsius to Fahrenheit and Fahrenheit to Celsius.
  * @param fahrenheit
  * @param celsius
  */
-	public void temperature(double fahrenheit, double celsius) {
-		
+	public void temperature(double fahrenheit, double celsius) 
+	{
 		//calculate Fahrenheit to Celsius
 		celsius = (fahrenheit- 32)*(5/9);
 		System.out.println("Celsius  "+celsius);
@@ -301,7 +288,6 @@ public class Utility {
 		System.out.println("Fahrenheit "+fahrenheit);
 	}
 	/**
-	 * 
 	 * @param principal
 	 * @param rate_of_interest
 	 * @param period
@@ -321,14 +307,13 @@ public static void loan(double principal, double rate_of_interest, double period
 		System.out.println("Converting radiun to sin "+sin);
 		double cos=Math.cos(radian);
 		System.out.println("Converting radiun to cos "+cos);
-		
 	}
 	/**
 	 * 
 	 * @param coin
 	 */
 		public static void coin(int coin) 
-	{	
+	   {	
 			int head=0,tail=0;
 			for(int i=1;i<=coin;i++)
 			{
@@ -340,7 +325,6 @@ public static void loan(double principal, double rate_of_interest, double period
 				{
 					tail++;
 				}
-
 			}
 			System.out.println("Head="+head);
 			System.out.println("tail="+tail);
@@ -362,7 +346,6 @@ public static void loan(double principal, double rate_of_interest, double period
 		int power=(int)Math.pow(i, 2);
 		System.out.println(power);
 		}
-		
 	}
 	/**
 	 * 
@@ -373,10 +356,8 @@ public static void loan(double principal, double rate_of_interest, double period
 		double harmonicNumber=1;
 		for(double i=2;i<=number;i++)
 		{
-			harmonicNumber=harmonicNumber+(1/i);
-			
+			harmonicNumber=harmonicNumber+(1/i);	
 		}
-	
 	System.out.println("Sum of harmonic series "+harmonicNumber);
 	}
 	/**
@@ -416,7 +397,7 @@ public static void loan(double principal, double rate_of_interest, double period
 				bets++;
 				if(Math.random()<0.5)
 				{
-					// win #1
+					// win $1
 					cash++;
 				}
 				else
@@ -443,7 +424,6 @@ public static void loan(double principal, double rate_of_interest, double period
 	 */
 	public static void prime(int range) 
 	{
-		
 		int flag=0;
 		for(int r=2;r<range;r++)
 		{
@@ -510,7 +490,7 @@ public static void loan(double principal, double rate_of_interest, double period
 				}
 				
 			}//for loop end
-		}//else loop
+		}//else loop end
 	}
 	
 	/**
@@ -585,9 +565,6 @@ public static void loan(double principal, double rate_of_interest, double period
 		{
 			System.out.println("\n6 fall maximum number of times.");
 		}
-		
-		
-	
 	}
 	/**
 	 * 
