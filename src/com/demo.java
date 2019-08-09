@@ -1,13 +1,17 @@
 package com;
 
+import com.bridgelabz.utility.Utility2;
+
 public class demo {
 
 	public static void main(String[] args) 
 	{
-		int number=1000;
+		System.out.println("enter number");
+		int number=Utility2.integerInput();
 		int rem=0;
 		int number2=0;
 		int a = 0,b = 0;
+		
 		while(number>1)
 		{
 			rem=number%10;
@@ -22,12 +26,19 @@ public class demo {
 			{
 				number=(rem*rem)+(number2*number2);
 			}	
+			//if number is unhappy then goes to infinite loop
+			if(number==4)
+			{
+				System.out.println("Unhappy");	
+				break;
+			}
+			
 		}
 		if(number==1)
 		{
 			System.out.println("happy");
 		}
-		
+	
 		
 	}
 
