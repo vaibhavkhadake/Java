@@ -10,10 +10,19 @@ public class Insertion {
 		{
 			
 			int key=number[j];
+			int i=j-1;
 			
-			
+			while((i>=0)&&(number[i]>key))
+			{
+				number[i+1]=number[i];
+				i--;
+			}
+			number[i+1]=key;
 		}
-
+			for(int i:number)
+			{
+				System.out.print(i);
+			}
 	}
 
 }
