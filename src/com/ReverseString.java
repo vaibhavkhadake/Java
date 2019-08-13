@@ -7,12 +7,16 @@ public class ReverseString {
 		String  st= "Vaibhav,amit,sunil,akash";
 		String temp="";
 		
-		String[] arr=st.split(" ,");
+		String[] arr=st.split(",");
 		
-		for(int i=arr.length;i>=0;i++)
+		for(int i=0;i<arr.length;i++)
 		{
-			temp=temp+st.charAt(i);
-			
+			char a[]=arr[i].toCharArray();
+			for(int j=a.length-1;j>=0;j--)
+			{
+			temp=temp+a[j];
+			}
+			temp=temp+" ";
 		}
 		
 		System.out.println(temp);

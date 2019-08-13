@@ -182,8 +182,9 @@ public class Utility2
 			for(int i=1;i<=number;i++)
 			{
 				fact=fact*i;
+				System.out.print(i+"* ");
 			}
-			System.out.println(fact);
+			System.out.println("\n"+fact);
 		}
 		return 0;
 	}
@@ -245,9 +246,21 @@ public class Utility2
 	public static void current_value(double amount, double rate_of_interest, double period)
 	{
 		double initialValue=amount/Math.pow((1+rate_of_interest/100),period);
-		System.out.println("total amount "+initialValue);
-		
-		
+		System.out.println("total amount "+initialValue);	
+	}
+	/**
+	 * 
+	 * @param animal
+	 * @param sound
+	 * @param poem
+	 * @return
+	 */
+	public static String regex(String animal, String sound, String poem) 
+	{
+		 poem=poem.replaceAll("ANIMAL", animal);
+		 poem=poem.replaceAll("SOUND", sound);
+		 return poem;
+
 	}
 	
 	
